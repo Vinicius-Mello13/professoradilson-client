@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { api } from "../../api/api";
 import { useNavigate } from "react-router-dom";
+import { api } from "../../api/api";
 
 export function Signup() {
   const navigate = useNavigate();
@@ -9,41 +9,24 @@ export function Signup() {
     email: "",
     password: "",
     confirmPassword: "",
+    whatsapp: "",
+    address: "",
+    burgh: "",
+    city: "",
   });
-
-  const [img, setImg] = useState("");
 
   function handleChange(e) {
     setForm({ ...form, [e.target.name]: e.target.value });
-  }
-
-  function handleImage(e) {
-    setImg(e.target.files[0]);
-  }
-
-  async function handleUpload() {
-    try {
-      const uploadData = new FormData();
-      uploadData.append("picture", img);
-
-      const response = await api.post("/upload-image", uploadData);
-
-      return response.data.url;
-    } catch (error) {
-      console.log(error);
-    }
   }
 
   async function handleSubmit(e) {
     e.preventDefault();
 
     try {
-      const imgURL = await handleUpload();
-      await api.post("/user/signup", { ...form, img: imgURL });
-
-      navigate("/login");
+      await api.post("/api/1.0/user/signup", form);
+      // navigate("/news")
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
   }
 
@@ -57,8 +40,6 @@ export function Signup() {
         value={form.name}
         onChange={handleChange}
       />
-      <label htmlFor="formImg">Sua foto de perfil:</label>
-      <input type="file" id="formImg" onChange={handleImage} />
 
       <label htmlFor="formEmail">E-mail:</label>
       <input
@@ -84,6 +65,43 @@ export function Signup() {
         value={form.confirmPassword}
         onChange={handleChange}
       />
+
+      <label htmlFor="formWhatsapp">WhatsApp</label>
+      <input
+        id="formWhatsapp"
+        type="whatsapp"
+        name="whatsapp"
+        value={form.whatsapp}
+        onChange={handleChange}
+      />
+
+      <label htmlFor="formAddress">Endereço</label>
+      <input
+        id="formAddress"
+        type="address"
+        name="address"
+        value={form.address}
+        onChange={handleChange}
+      />
+
+      <label htmlFor="formBurgh">Bairro</label>
+      <input
+        id="formBurgh"
+        type="burgh"
+        name="burgh"
+        value={form.burgh}
+        onChange={handleChange}
+      />
+
+      <label htmlFor="formCity">Cidade</label>
+      <input
+        id="formCity"
+        type="city"
+        name="city"
+        value={form.city}
+        onChange={handleChange}
+      />
+
       <button type="submit">Cadastrar</button>
     </form>
   );
