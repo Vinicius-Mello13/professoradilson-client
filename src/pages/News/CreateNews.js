@@ -1,22 +1,28 @@
 import { api } from "../../api/api";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export function CreateNews() {
+  const navigate = useNavigate();
   const [form, setForm] = useState({
     title: "",
-    body: "",
+    news: "",
   });
 
   function handleChange(event) {
     setForm({ ...form, [event.target.name]: event.target.value });
     console.log(form)
-  }
+  };
 
   async function handleSubmit(e) {
     e.preventDefault();
 
     try {
-      await api.post("/api/1.0/news", form);
+      const response = await api.post("api/1.0/news", form
+      );
+
+      navigate("/news");
+      console.log(response);
     } catch (error) {
       console.log(error);
     }
@@ -31,11 +37,13 @@ export function CreateNews() {
         value={form.title}
         onChange={handleChange}
       ></input>
+
+
       <label>Notícia</label>
       <textarea
-        name="body"
+        name="news"
         type="text"
-        value={form.body}
+        value={form.news}
         onChange={handleChange}
       ></textarea>
       <button type="submit">Enviar</button>
