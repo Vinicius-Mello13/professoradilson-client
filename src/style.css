@@ -37,6 +37,11 @@
     sans-serif;
 }
 
+.photo{
+  width: 30%;
+  margin-left: 500px;
+}
+
 /* SignUp */
 
 .signup-welcome-text {

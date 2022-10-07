@@ -36,7 +36,7 @@ export function Login() {
   return (
     <div class="page">
       <form onSubmit={handleSubmit}>
-        <h1 class="welcome-text">Olá, caro munícipe!</h1>{" "}
+        <h1 class="welcome-text">Olá, caro munícipe!</h1>
         <h2 class="welcome-text">
           Seja bem-vindo ao nosso espaço, aqui você acompanha nosso trabalho,
           oferece sugestões, opiniões e participa do dia-a-dia da nossa querida
@@ -66,7 +66,14 @@ export function Login() {
           Ainda não é cadastrado? <Link to="/signup">Clique aqui</Link> e faça
           parte do nosso espaço
         </h>
-        <img src="./../images/adilson01.jpg" alt="Professor Adilson"/>
+        <a href="https://freeimage.host/i/Qwp88J">
+          <img
+          class="photo"
+            src="https://iili.io/Qwp88J.md.jpg"
+            alt="Qwp88J.md.jpg"
+            border="0"
+          />
+        </a>
       </form>
     </div>
   );
