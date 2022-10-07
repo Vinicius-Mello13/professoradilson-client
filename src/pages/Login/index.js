@@ -22,7 +22,7 @@ export function Login() {
     e.preventDefault();
 
     try {
-      const response = await api.post("/api/1.0/users/login", form);
+      const response = await api.post("/api/1.0/user/login", form);
       setLoggedInUser({ ...response.data });
 
       localStorage.setItem("loggedInUser", JSON.stringify(response.data));
