@@ -62,8 +62,8 @@ export function ReadNews() {
   return (
     <div>
       <div>
-        <h1>{news.title}</h1>
-        <p>{news.news}</p>
+        <h1 class="titulo">{news.title}</h1>
+        <p class="noticia">{news.news}</p>
       </div>
       <div></div>
 

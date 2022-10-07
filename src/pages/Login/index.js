@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import { AuthContext } from "../../contexts/authContext";
 import { api } from "../../api/api";
 import { Link, useNavigate } from "react-router-dom";
+import style from "../../../src/style.css";
 
 export function Login() {
   const [form, setForm] = useState({
@@ -33,28 +34,40 @@ export function Login() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h1>OLÁ, CARO MUNÍCIPE! SEJA BEM-VINDO AO NOSSO ESPAÇO, 
-        AQUI VOCÊ ACOMPANHA NOSSO TRABALHO, OFERECE SUGESTÕES, 
-        OPINIÕES E PARTICIPA DO DIA-A-DIA DA NOSSA QUERIDA CIDADE! 
-        FAÇA SEU LOGIN OU CADASTRE-SE E VAMOS JUNTOS POR UMA BARRETOS CADA VEZ MELHOR</h1>
-      <label>Email:</label>
-      <input
-        type="email"
-        name="email"
-        value={form.email}
-        onChange={handleChange}
-      />
-      <label>Senha:</label>
-      <input
-        type="password"
-        name="password"
-        value={form.password}
-        onChange={handleChange}
-      />
-      <button type="submit">Entrar!</button>
-
-      <h6>Ainda não é cadastrado? <Link to="/signup">Clique aqui</Link> e faça parte do nosso espaço</h6>
-    </form>
+    <div class="page">
+      <form onSubmit={handleSubmit}>
+        <h1 class="welcome-text">Olá, caro munícipe!</h1>{" "}
+        <h2 class="welcome-text">
+          Seja bem-vindo ao nosso espaço, aqui você acompanha nosso trabalho,
+          oferece sugestões, opiniões e participa do dia-a-dia da nossa querida
+          cidade! Faça seu login ou cadastre-se e vamos juntos por uma Barretos
+          cada vez melhor!!!
+        </h2>
+        <label class="input-name">Email:</label>
+        <input
+          class="input"
+          type="email"
+          name="email"
+          value={form.email}
+          onChange={handleChange}
+        />
+        <label class="input-name">Senha:</label>
+        <input
+          class="input"
+          type="password"
+          name="password"
+          value={form.password}
+          onChange={handleChange}
+        />
+        <button type="submit" class="button">
+          Entrar!
+        </button>
+        <h class="clique-aqui">
+          Ainda não é cadastrado? <Link to="/signup">Clique aqui</Link> e faça
+          parte do nosso espaço
+        </h>
+        <img src="./../images/adilson01.jpg" alt="Professor Adilson"/>
+      </form>
+    </div>
   );
 }

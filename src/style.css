@@ -1,0 +1,140 @@
+/* Geral */
+
+* {
+  background-color: cornflowerblue;
+  width: 100%;
+}
+
+/* Login */
+
+.welcome-text {
+  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.input-name {
+  color: white;
+}
+
+.input {
+  background-color: aliceblue;
+  width: 25%;
+}
+
+.button {
+  color: black;
+  background-color: antiquewhite;
+  width: 10%;
+}
+
+.clique-aqui {
+  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+/* SignUp */
+
+.signup-welcome-text {
+  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin-left: 320px;
+}
+
+.signup-label {
+  color: white;
+}
+
+.signup-input {
+  background-color: aliceblue;
+  width: 100%;
+  size: 30px;
+}
+
+.signup-form {
+  width: 50%;
+  margin-left: 350px;
+}
+
+.signup-button {
+  color: black;
+  background-color: antiquewhite;
+  width: 30%;
+  margin-left: 500px;
+}
+
+/* User News */
+
+.usernews-welcome-text {
+  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin-left: 450px;
+}
+
+.title-news {
+  width: 50%;
+  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: bisque;
+}
+
+.news-input {
+  background-color: aliceblue;
+  width: 50%;
+  size: 30px;
+}
+
+.sugestao {
+  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.usernews-button {
+  color: black;
+  background-color: antiquewhite;
+  width: 30%;
+  margin-left: 500px;
+}
+
+.sugestoes {
+  width: 50%;
+  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: bisque;
+  margin-left: 600px;
+}
+
+/* Read News */
+
+.titulo{
+  width: 50%;
+  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: bisque;
+  margin-left: 650px;
+}
+
+.noticia{
+  width: 50%;
+  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: bisque;
+  margin-left: 650px;
+}

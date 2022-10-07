@@ -22,7 +22,7 @@ export function EditNews() {
     try {
       await api.put(`/api/1.0/news/${id}`, form);
 
-      navigate("/news");
+      navigate("/admin-news");
     } catch (error) {
       console.log(error);
     }

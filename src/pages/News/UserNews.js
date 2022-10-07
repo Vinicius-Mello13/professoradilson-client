@@ -75,32 +75,15 @@ export function UserNews() {
   return (
     <div>
       <div>
-        <h1>Acompanhe aqui nosso trabalho</h1>
-        {/* <Link to="/add-news">
-          <h6>Adicionar Notícia</h6>
-        </Link> */}
+        <h1 class="usernews-welcome-text">Acompanhe aqui nosso trabalho</h1>
       </div>
       <div>
         {topics.map((currentTopic) => {
           return (
             <div key={currentTopic._id}>
               <Link to={`/read-news/${currentTopic._id}`}>
-                <h2>{currentTopic.title}</h2>
+                <h2 class="title-news">{currentTopic.title}</h2>
               </Link>
-              {/* <button
-                onClick={() => {
-                  navigate(`/edit-news/${currentTopic._id}`);
-                }}
-              >
-                Editar
-              </button> */}
-              {/* <button
-                onClick={() => {
-                  deleteTopic(currentTopic._id);
-                }}
-              >
-                Deletar
-              </button> */}
             </div>
           );
         })}
@@ -108,31 +91,30 @@ export function UserNews() {
 
       <div>
         <form onSubmit={handleSubmit}>
-          <label>Deixe Aqui sua Sugestão, Crítica ou Solicitação</label>
+          <label class="sugestao">
+            Deixe Aqui sua Sugestão, Crítica ou Solicitação
+          </label>
           <input
+            class="news-input"
             name="body"
             type="text"
             value={form.body}
             onChange={handleChange}
           ></input>
-          <button type="submit">Enviar</button>
+          <button class="usernews-button" type="submit">
+            Enviar
+          </button>
         </form>
       </div>
 
       <div>
         {readComments.map((currentTopic) => {
           return (
-            <div key={currentTopic._id}>
-              <p>{currentTopic.body}</p>
-
-              {/* <button
-                onClick={() => {
-                  deleteSuggestions(currentTopic._id);
-                }}
-              >
-                Deletar
-              </button> */}
-            </div>
+            <>          
+              <div key={currentTopic._id}>
+                <p class="sugestoes">{currentTopic.body}</p>
+              </div>
+            </>
           );
         })}
       </div>

@@ -24,85 +24,124 @@ export function Signup() {
 
     try {
       await api.post("/api/1.0/user/signup", form);
-      // navigate("/news")
+      navigate("/user-news");
     } catch (error) {
       // console.log(error);
     }
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="formName">Nome:</label>
-      <input
-        id="formName"
-        name="name"
-        type="text"
-        value={form.name}
-        onChange={handleChange}
-      />
-
-      <label htmlFor="formEmail">E-mail:</label>
-      <input
-        id="formEmail"
-        name="email"
-        type="email"
-        value={form.email}
-        onChange={handleChange}
-      />
-      <label htmlFor="formPassword">Senha:</label>
-      <input
-        id="formPassword"
-        name="password"
-        type="password"
-        value={form.password}
-        onChange={handleChange}
-      />
-      <label htmlFor="formConfirmPassword">Confirmação de senha</label>
-      <input
-        id="formConfirmPassword"
-        type="password"
-        name="confirmPassword"
-        value={form.confirmPassword}
-        onChange={handleChange}
-      />
-
-      <label htmlFor="formWhatsapp">WhatsApp</label>
-      <input
-        id="formWhatsapp"
-        type="whatsapp"
-        name="whatsapp"
-        value={form.whatsapp}
-        onChange={handleChange}
-      />
-
-      <label htmlFor="formAddress">Endereço</label>
-      <input
-        id="formAddress"
-        type="address"
-        name="address"
-        value={form.address}
-        onChange={handleChange}
-      />
-
-      <label htmlFor="formBurgh">Bairro</label>
-      <input
-        id="formBurgh"
-        type="burgh"
-        name="burgh"
-        value={form.burgh}
-        onChange={handleChange}
-      />
-
-      <label htmlFor="formCity">Cidade</label>
-      <input
-        id="formCity"
-        type="city"
-        name="city"
-        value={form.city}
-        onChange={handleChange}
-      />
-
-      <button type="submit">Cadastrar</button>
-    </form>
+    <>
+      <h1 class="signup-welcome-text">Cadastre-se aqui e fique por dentro do nosso trabalho!</h1>
+      <form onSubmit={handleSubmit}>
+        <div class="signup-form">
+          <label class="signup-label" htmlFor="formName">
+            Nome:
+          </label>
+          <input
+            class="signup-input"
+            id="formName"
+            name="name"
+            type="text"
+            value={form.name}
+            onChange={handleChange}
+          />
+        </div>
+        <div class="signup-form">
+          <label class="signup-label" htmlFor="formEmail">
+            E-mail:
+          </label>
+          <input
+            class="signup-input"
+            id="formEmail"
+            name="email"
+            type="email"
+            value={form.email}
+            onChange={handleChange}
+          />
+        </div>
+        <div class="signup-form">
+          <label class="signup-label" htmlFor="formPassword">
+            Senha:
+          </label>
+          <input
+            class="signup-input"
+            id="formPassword"
+            name="password"
+            type="password"
+            value={form.password}
+            onChange={handleChange}
+          />
+        </div>
+        <div class="signup-form">
+          <label class="signup-label" htmlFor="formConfirmPassword">
+            Confirmação de senha
+          </label>
+          <input
+            class="signup-input"
+            id="formConfirmPassword"
+            type="password"
+            name="confirmPassword"
+            value={form.confirmPassword}
+            onChange={handleChange}
+          />
+        </div>
+        <div class="signup-form">
+          <label class="signup-label" htmlFor="formWhatsapp">
+            WhatsApp
+          </label>
+          <input
+            class="signup-input"
+            id="formWhatsapp"
+            type="whatsapp"
+            name="whatsapp"
+            value={form.whatsapp}
+            onChange={handleChange}
+          />
+        </div>
+        <div class="signup-form">
+          <label class="signup-label" htmlFor="formAddress">
+            Endereço
+          </label>
+          <input
+            class="signup-input"
+            id="formAddress"
+            type="address"
+            name="address"
+            value={form.address}
+            onChange={handleChange}
+          />
+        </div>
+        <div class="signup-form">
+          <label class="signup-label" htmlFor="formBurgh">
+            Bairro
+          </label>
+          <input
+            class="signup-input"
+            id="formBurgh"
+            type="burgh"
+            name="burgh"
+            value={form.burgh}
+            onChange={handleChange}
+          />
+        </div>
+        <div class="signup-form">
+          <label class="signup-label" htmlFor="formCity">
+            Cidade
+          </label>
+          <input
+            class="signup-input"
+            id="formCity"
+            type="city"
+            name="city"
+            value={form.city}
+            onChange={handleChange}
+          />
+        </div>
+        <button class="signup-button" type="submit">
+          Cadastrar
+        </button>
+      </form>
+    </>
   );
 }

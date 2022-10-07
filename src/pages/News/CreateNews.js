@@ -21,7 +21,7 @@ export function CreateNews() {
       const response = await api.post("api/1.0/news", form
       );
 
-      navigate("/news");
+      navigate("/user-news");
       console.log(response);
     } catch (error) {
       console.log(error);
