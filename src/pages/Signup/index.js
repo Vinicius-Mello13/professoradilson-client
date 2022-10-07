@@ -24,7 +24,10 @@ export function Signup() {
 
     try {
       await api.post("/api/1.0/user/signup", form);
-      navigate("/user-news");
+      // if (user.role === "ADMIN") navigate("/admin-news");
+      // else {
+        navigate("/user-news");
+      // }
     } catch (error) {
       // console.log(error);
     }
@@ -32,7 +35,9 @@ export function Signup() {
 
   return (
     <>
-      <h1 class="signup-welcome-text">Cadastre-se aqui e fique por dentro do nosso trabalho!</h1>
+      <h1 class="signup-welcome-text">
+        Cadastre-se aqui e fique por dentro do nosso trabalho!
+      </h1>
       <form onSubmit={handleSubmit}>
         <div class="signup-form">
           <label class="signup-label" htmlFor="formName">
