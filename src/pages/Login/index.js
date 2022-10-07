@@ -26,8 +26,11 @@ export function Login() {
       console.log(response);
       setLoggedInUser({ ...response.data });
       localStorage.setItem("loggedInUser", JSON.stringify(response.data));
-
-      navigate("/user-news");
+      if (response.data.user.role === "ADMIN") {
+        navigate("/admin-news");
+      } else {
+        navigate("/user-news");
+      }
     } catch (error) {
       console.log(error);
     }
