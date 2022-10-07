@@ -23,8 +23,8 @@ export function Login() {
 
     try {
       const response = await api.post("/api/1.0/user/login", form);
+      console.log(response);
       setLoggedInUser({ ...response.data });
-
       localStorage.setItem("loggedInUser", JSON.stringify(response.data));
 
       navigate("/user-news");
@@ -68,7 +68,7 @@ export function Login() {
         </h>
         <a href="https://freeimage.host/i/Qwp88J">
           <img
-          class="photo"
+            class="photo"
             src="https://iili.io/Qwp88J.md.jpg"
             alt="Qwp88J.md.jpg"
             border="0"
