@@ -23,12 +23,11 @@ export function Signup() {
     e.preventDefault();
 
     try {
-      const response = await api.post("/api/1.0/user/signup", form);
-      if (response.data.user.role === "ADMIN") {
-        navigate("/admin-news");
-      } else {
+      await api.post("/api/1.0/user/signup", form);
+      // if (user.role === "ADMIN") navigate("/admin-news");
+      // else {
         navigate("/user-news");
-      }
+      // }
     } catch (error) {
       // console.log(error);
     }
