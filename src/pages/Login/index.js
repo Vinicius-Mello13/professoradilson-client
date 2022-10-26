@@ -39,9 +39,9 @@ export function Login() {
   return (
     <div class="page">
       <form onSubmit={handleSubmit}>
-        <h1 class="welcome-text">Olá, caro munícipe!</h1>
+        <h1 class="welcome-text">Olá, amigo e amiga barretense!</h1>
         <h2 class="welcome-text">
-          Seja bem-vindo ao nosso espaço, aqui você acompanha nosso trabalho,
+          Seja bem-vindo(a) ao nosso espaço, aqui você acompanha nosso trabalho,
           oferece sugestões, opiniões e participa do dia-a-dia da nossa querida
           cidade! Faça seu login ou cadastre-se e vamos juntos por uma Barretos
           cada vez melhor!!!
