@@ -38,46 +38,70 @@ export function Login() {
 
   return (
     <div class="page">
-      <form onSubmit={handleSubmit}>
-        <h1 class="welcome-text">Olá, caro munícipe!</h1>
-        <h2 class="welcome-text">
-          Seja bem-vindo ao nosso espaço, aqui você acompanha nosso trabalho,
-          oferece sugestões, opiniões e participa do dia-a-dia da nossa querida
-          cidade! Faça seu login ou cadastre-se e vamos juntos por uma Barretos
-          cada vez melhor!!!
-        </h2>
-        <label class="input-name">Email:</label>
-        <input
-          class="input"
-          type="email"
-          name="email"
-          value={form.email}
-          onChange={handleChange}
-        />
-        <label class="input-name">Senha:</label>
-        <input
-          class="input"
-          type="password"
-          name="password"
-          value={form.password}
-          onChange={handleChange}
-        />
-        <button type="submit" class="button">
-          Entrar!
-        </button>
-        <h class="clique-aqui">
-          Ainda não é cadastrado? <Link to="/signup">Clique aqui</Link> e faça
-          parte do nosso espaço
-        </h>
-        <a href="https://freeimage.host/i/Qwp88J">
+      <div class='row'>
+        <div class="page-login-01">
           <img
-            class="photo"
-            src="https://iili.io/Qwp88J.md.jpg"
-            alt="Qwp88J.md.jpg"
-            border="0"
-          />
-        </a>
-      </form>
+            class='photo-cam'
+            src='https://iili.io/DyO8Vn.jpg'
+            alt='Câmara Municipal'>
+          </img>
+          <h1 class="welcome-text" style={{ paddingTop: 10, paddingLeft: 20, paddingLeft: 20 }}>Olá, caro munícipe!</h1>
+          <p class="welcome-text-01" style={{ padding: 20 }}>
+            Seja bem-vindo ao nosso espaço, aqui você acompanha nosso trabalho,
+            oferece sugestões, opiniões e participa do dia-a-dia da nossa querida
+            cidade!
+            <p>Faça seu login ou cadastre-se e vamos juntos por uma Barretos
+              cada vez melhor!!!
+            </p>
+          </p>
+
+        </div>
+
+        <div class="page-login-02">
+          <form onSubmit={handleSubmit}>
+            <div class="e-0">
+              <label class="enter-text">
+                Entrar
+              </label>
+            </div>
+            <div>
+              <hr>
+              </hr>
+            </div>
+            <div class="login-input e-0">
+              <input
+                class="input"
+                placeholder="E-mail*"
+                type="email"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+              />
+            </div>
+            <div class="login-input e-0">
+              <input
+                class="input"
+                placeholder="Senha*"
+                type="password"
+                name="password"
+                value={form.password}
+                onChange={handleChange}
+              />
+            </div>
+            <div class="e-0 justify-center">
+              <button type="submit" class="button" style={{ marginTop: 15, marginBottom: 5 }}>
+                Entrar
+              </button>
+            </div>
+            <div class="e-0 justify-center">
+              <h class="clique-aqui">
+                Ainda não é cadastrado? <Link to="/signup">Clique aqui</Link> e cadastre-se.
+              </h>
+            </div>
+
+          </form>
+        </div>
+      </div>
     </div>
   );
 }

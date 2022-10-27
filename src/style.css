@@ -1,34 +1,74 @@
 /* Geral */
 
 * {
-  background-color: cornflowerblue;
-  width: 100%;
+  background-color: #fff;
 }
-
 /* Login */
+
+.input-field{
+  width: 100%;
+  background-color: blue;
+  border: none;
+}
 
 .welcome-text {
   font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  color: white;
-  padding-top: 30px;
+  color: #000;
   padding-bottom: 10px;
 }
 
+.welcome-text-01 {
+  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: #000;
+  font-size: 20px;
+}
+
+.enter-text {
+  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  color: blue;
+  margin-left: 10px
+}
+
+hr {
+  width: 90%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 .input-name {
-  color: white;
+  color: #000;
 }
 
 .input {
-  background-color: aliceblue;
-  width: 25%;
+  background-color: #fff;
+  margin: 10px 10px 10px 10px;
+  width: 95%;
+  border-radius: 5px;
+  padding: 7px;
 }
 
 .button {
   color: black;
-  background-color: antiquewhite;
+  background-color: #fff;
   width: 10%;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.button:hover{
+  background-color: #fff;
+  font-weight: bold;
 }
 
 .clique-aqui {
@@ -38,8 +78,45 @@
 }
 
 .photo{
-  width: 30%;
-  margin-left: 500px;
+  width: 100%;
+  height: 450px; 
+  top:0;
+  left:0
+}
+
+.photo-cam {
+  width: 100%;
+  height: auto;
+  opacity: 0.07;
+  position: absolute;
+  display: inline-block;
+}
+
+.page-login-01 {
+  display: inline-block;
+  width: 60%;
+  position: relative;
+}
+
+.page-login-02{
+  display: inline-block;
+  width: 40%;
+}
+
+.login-input {
+  justify-content: space-around;
+  display: flex;
+}
+
+.row {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.e-0 {
+    margin: 10px
 }
 
 /* SignUp */
@@ -142,4 +219,17 @@
     sans-serif;
   color: bisque;
   margin-left: 650px;
+}
+
+/* JUSTIFY-CONTENT */
+
+.justify-center{
+  justify-content: center;
+  display:flex;
+}
+
+/* PADDING */
+
+.pad-10 {
+  padding: 10px
 }
