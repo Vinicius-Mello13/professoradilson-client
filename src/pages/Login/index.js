@@ -37,7 +37,7 @@ export function Login() {
   }
 
   return (
-    <div class="page">
+   
       <div class='row'>
         <div class="page-login-01">
           <img
@@ -102,6 +102,6 @@ export function Login() {
           </form>
         </div>
       </div>
-    </div>
+    
   );
 }
