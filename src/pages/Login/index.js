@@ -16,7 +16,19 @@ export function Login() {
 
   function handleChange(e) {
     setForm({ ...form, [e.target.name]: e.target.value });
+    
   }
+
+  // const requiredField = [
+  //   {
+  //   type:'mail',
+  //   message:'O Campo e-mail é obrigatório'
+  //   },
+  //   {
+  //     type:'password',
+  //     message:'O Campo senha é obrigatório'
+  //   }
+  // ]
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -42,10 +54,10 @@ export function Login() {
         <div class="page-login-01">
           <img
             class='photo-cam'
-            src='https://iili.io/DyO8Vn.jpg'
+            src='https://iili.io/bBNwmX.jpg'
             alt='Câmara Municipal'>
           </img>
-          <h1 class="welcome-text" style={{ paddingTop: 10, paddingLeft: 20, paddingLeft: 20 }}>Olá, caro munícipe!</h1>
+          {/* <h1 class="welcome-text" style={{ paddingTop: 10, paddingLeft: 20, paddingLeft: 20 }}>Olá, amigo(a)Barretense!</h1>
           <p class="welcome-text-01" style={{ padding: 20 }}>
             Seja bem-vindo ao nosso espaço, aqui você acompanha nosso trabalho,
             oferece sugestões, opiniões e participa do dia-a-dia da nossa querida
@@ -53,7 +65,7 @@ export function Login() {
             <p>Faça seu login ou cadastre-se e vamos juntos por uma Barretos
               cada vez melhor!!!
             </p>
-          </p>
+          </p> */}
 
         </div>
 
