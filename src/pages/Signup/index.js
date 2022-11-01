@@ -42,15 +42,17 @@ export function Signup() {
           alt="Professor Adilson"
         ></img>
       </div>
-      <div class="page-login-02 background-signup">
-        <h1 class="signup-welcome-text">
-          Cadastre-se aqui e fique por dentro do nosso trabalho!
-        </h1>
+      <div class="page-login-02">
         <form onSubmit={handleSubmit}>
-          <div class="signup-form">
+      
+        <div class="text-header">
+            <label class="enter-text">Cadastre-se aqui e fique por dentro do nosso trabalho!</label>
+          </div>
+       
+          <div class="login-input e-0">
             <input
               placeholder="Nome"
-              class="signup-input"
+              class="input"
               id="formName"
               name="name"
               type="text"
@@ -58,10 +60,10 @@ export function Signup() {
               onChange={handleChange}
             />
           </div>
-          <div class="signup-form">
+          <div class="login-input e-0">
             <input
               placeholder="E-mail"
-              class="signup-input"
+              class="input"
               id="formEmail"
               name="email"
               type="email"
@@ -69,10 +71,10 @@ export function Signup() {
               onChange={handleChange}
             />
           </div>
-          <div class="signup-form">
+          <div class="login-input e-0">
             <input
               placeholder="Senha"
-              class="signup-input"
+              class="input"
               id="formPassword"
               name="password"
               type="password"
@@ -80,10 +82,10 @@ export function Signup() {
               onChange={handleChange}
             />
           </div>
-          <div class="signup-form">
+          <div class="login-input e-0">
             <input
               placeholder="Confirmação de senha"
-              class="signup-input"
+              class="input"
               id="formConfirmPassword"
               type="password"
               name="confirmPassword"
@@ -91,10 +93,10 @@ export function Signup() {
               onChange={handleChange}
             />
           </div>
-          <div class="signup-form">
+          <div class="login-input e-0">
             <input
               placeholder="WhatsApp"
-              class="signup-input"
+              class="input"
               id="formWhatsapp"
               type="whatsapp"
               name="whatsapp"
@@ -102,10 +104,10 @@ export function Signup() {
               onChange={handleChange}
             />
           </div>
-          <div class="signup-form">
+          <div class="login-input e-0">
             <input
               placeholder="Endereço"
-              class="signup-input"
+              class="input"
               id="formAddress"
               type="address"
               name="address"
@@ -113,10 +115,10 @@ export function Signup() {
               onChange={handleChange}
             />
           </div>
-          <div class="signup-form">
+          <div class="login-input e-0">
             <input
               placeholder="Bairro"
-              class="signup-input"
+              class="input"
               id="formBurgh"
               type="burgh"
               name="burgh"
@@ -124,10 +126,10 @@ export function Signup() {
               onChange={handleChange}
             />
           </div>
-          <div class="signup-form">
+          <div class="login-input e-0">
             <input
               placeholder="Cidade"
-              class="signup-input"
+              class="input"
               id="formCity"
               type="city"
               name="city"
@@ -135,9 +137,12 @@ export function Signup() {
               onChange={handleChange}
             />
           </div>
-          <button class="signup-button" type="submit">
-            Cadastrar
-          </button>
+          <div class='buttonCadastro'>
+            <button class="button" type="submit" style={{ marginTop: 15, marginBottom: 5 }}>
+              Cadastrar
+            </button>
+
+          </div>
         </form>
       </div>
     </div>

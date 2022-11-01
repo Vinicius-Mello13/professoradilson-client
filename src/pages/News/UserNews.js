@@ -73,15 +73,16 @@ export function UserNews() {
   }, []);
 
   return (
-    <div>
+    <div class="page">
       <div>
         <h1 class="usernews-welcome-text">Acompanhe aqui nosso trabalho</h1>
       </div>
       <div>
         {topics.map((currentTopic) => {
           return (
-            <div key={currentTopic._id}>
+            <div key={currentTopic._id} class="card">
               <Link to={`/read-news/${currentTopic._id}`}>
+                <div style={{ backgroundColor: "blue" }}></div>
                 <h2 class="title-news">{currentTopic.title}</h2>
               </Link>
             </div>
@@ -110,7 +111,7 @@ export function UserNews() {
       <div>
         {readComments.map((currentTopic) => {
           return (
-            <>          
+            <>
               <div key={currentTopic._id}>
                 <p class="sugestoes">{currentTopic.body}</p>
               </div>
