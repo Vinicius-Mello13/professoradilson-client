@@ -180,7 +180,7 @@ hr {
 
 /* User News */
 
-* {
+.page {
   margin: 0;
   width: 100%;
   min-height: 100%;
@@ -207,6 +207,7 @@ hr {
   width: 800px;
   transition: all 0.3s ease-out;
   background-color: white;
+  border-right:1px solid #000
 }
 
 .title-news {
@@ -216,6 +217,8 @@ hr {
     sans-serif;
   color: blue;
   background-color: white;
+  text-decoration: none;
+
 }
 
 .news-input {
