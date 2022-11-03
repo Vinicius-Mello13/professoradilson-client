@@ -75,7 +75,7 @@ export function News() {
   return (
     <div>
       <div>
-        <h1>Acompanhe aqui nosso trabalho</h1>
+        <h1 style={{margin: '0'}}>Acompanhe aqui nosso trabalho</h1>
         <Link to="/add-news">
           <h6>Adicionar Notícia</h6>
         </Link>
