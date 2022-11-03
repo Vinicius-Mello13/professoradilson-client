@@ -90,20 +90,20 @@ export function UserNews() {
       </div>
 
       <div>
-        <form onSubmit={handleSubmit}>
-          <label class="sugestao">
-            Deixe Aqui sua Sugestão, Crítica ou Solicitação
-          </label>
-          <input
-            class="news-input"
-            name="body"
-            type="text"
-            value={form.body}
-            onChange={handleChange}
-          ></input>
-          <button class="usernews-button" type="submit">
-            Enviar
-          </button>
+        <form onSubmit={handleSubmit}>         
+          <div>
+            <input
+              class="sugestão-input"
+              name="body"
+              type="text"
+              value={form.body}
+              onChange={handleChange}
+              placeholder={"Deixe Aqui sua Sugestão, Crítica ou Solicitação"}
+            ></input>         
+            <button class="usernews-button" type="submit">
+              Enviar
+            </button>
+          </div>
         </form>
       </div>
 
