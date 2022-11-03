@@ -12,9 +12,7 @@
 }
 
 .welcome-text {
-  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #000;
   padding-bottom: 10px;
   justify-content: center;
@@ -22,17 +20,13 @@
 }
 
 .welcome-text-01 {
-  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #000;
   font-size: 20px;
 }
 
 .enter-text {
-  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #000;
   font-size: 35px;
   font-weight: bold;
@@ -75,9 +69,7 @@ hr {
 } */
 
 .clique-aqui {
-  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .photo {
@@ -125,9 +117,7 @@ hr {
 /* SignUp */
 
 .signup-welcome-text {
-  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-color: cornflowerblue;
   padding-top: 30px;
   padding-bottom: 10px;
@@ -185,12 +175,10 @@ hr {
   width: 100%;
   min-height: 100%;
   background-color: gainsboro;
-} */
+}
 
-.usernews-welcome-text {
-  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+*/ .usernews-welcome-text {
+  font-family: 'Raleway', sans-serif;
   color: black;
   display: flex;
   justify-content: center;
@@ -207,19 +195,17 @@ hr {
   width: 800px;
   transition: all 0.3s ease-out;
   background-color: white;
-  border-left:15px solid blue
+  border-left: 15px solid blue
 }
 
 .title-news {
   width: 50%;
-  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: blue;
   background-color: white;
 }
 
-.link{
+.link {
   text-decoration: none;
 }
 
@@ -229,21 +215,38 @@ hr {
   size: 100px;
 }
 
-.sugestao {
-  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+.sugestão-input{
+  background-color: #fff;
+  margin: 10px 10px 10px 10px;
+  width: 90%;
+  border-radius: 7px;
+  padding: 10px;
 }
+
+.sugestao {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+/* .button{
+  justify-content: center;
+} */
 
 .usernews-button {
   color: rgb(255, 255, 255);
   background-color: rgb(2, 204, 69);
   width: 100px;
-  padding: 5px;
+  padding: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
+
 }
 
 .sugestoes {
@@ -252,7 +255,7 @@ hr {
   width: 95%;
   border-radius: 5px;
   padding: 7px;
-  border-left:10px solid blue
+  border-left: 10px solid blue
 }
 
 .img-adilson {
@@ -264,18 +267,14 @@ hr {
 
 .titulo {
   width: 50%;
-  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: bisque;
   margin-left: 650px;
 }
 
 .noticia {
   width: 50%;
-  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: bisque;
   margin-left: 650px;
 }
