@@ -82,7 +82,6 @@ export function UserNews() {
           return (
             <div key={currentTopic._id} class="card">
               <Link to={`/read-news/${currentTopic._id}`}>
-                <div style={{ backgroundColor: "blue" }}></div>
                 <h2 class="title-news">{currentTopic.title}</h2>
               </Link>
             </div>
