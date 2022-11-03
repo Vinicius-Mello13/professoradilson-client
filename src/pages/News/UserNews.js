@@ -75,13 +75,13 @@ export function UserNews() {
   return (
     <div class="page">
       <div>
-        <h1 class="usernews-welcome-text">Acompanhe aqui nosso trabalho</h1>
+        <h1 class="usernews-welcome-text">Acompanhe aqui nosso trabalho!</h1>
       </div>
       <div>
         {topics.map((currentTopic) => {
           return (
             <div key={currentTopic._id} class="card">
-              <Link to={`/read-news/${currentTopic._id}`}>
+              <Link className= "link" to={`/read-news/${currentTopic._id}`}>
                 <h2 class="title-news">{currentTopic.title}</h2>
               </Link>
             </div>

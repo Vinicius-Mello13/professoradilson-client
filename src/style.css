@@ -191,7 +191,7 @@ hr {
   font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  color: blue;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,7 +207,7 @@ hr {
   width: 800px;
   transition: all 0.3s ease-out;
   background-color: white;
-  border-right:1px solid #000
+  border-left:15px solid blue
 }
 
 .title-news {
@@ -217,8 +217,10 @@ hr {
     sans-serif;
   color: blue;
   background-color: white;
-  text-decoration: none;
+}
 
+.link{
+  text-decoration: none;
 }
 
 .news-input {
@@ -250,6 +252,7 @@ hr {
   width: 95%;
   border-radius: 5px;
   padding: 7px;
+  border-left:10px solid blue
 }
 
 .img-adilson {
