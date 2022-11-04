@@ -109,12 +109,12 @@ export function News() {
       <div>
         <form onSubmit={handleSubmit}>
           <label>Deixe Aqui sua Sugestão, Crítica ou Solicitação</label>
-          <input
+          <textarea
             name="body"
             type="text"
             value={form.body}
             onChange={handleChange}
-          ></input>
+          ></textarea>
           <button type="submit">Enviar</button>
         </form>
       </div>

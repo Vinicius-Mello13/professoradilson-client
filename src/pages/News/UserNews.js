@@ -73,50 +73,10 @@ export function UserNews() {
   }, []);
 
   return (
-    <div class="page">
+    <div>
       <div>
-        <h1 class="usernews-welcome-text">Acompanhe aqui nosso trabalho!</h1>
-      </div>
-      <div>
-        {topics.map((currentTopic) => {
-          return (
-            <div key={currentTopic._id} class="card">
-              <Link className= "link" to={`/read-news/${currentTopic._id}`}>
-                <h2 class="title-news">{currentTopic.title}</h2>
-              </Link>
-            </div>
-          );
-        })}
-      </div>
-
-      <div>
-        <form onSubmit={handleSubmit}>         
-          <div>
-            <input
-              class="sugestão-input"
-              name="body"
-              type="text"
-              value={form.body}
-              onChange={handleChange}
-              placeholder={"Deixe Aqui sua Sugestão, Crítica ou Solicitação"}
-            ></input>         
-            <button class="usernews-button" type="submit">
-              Enviar
-            </button>
-          </div>
-        </form>
-      </div>
-
-      <div>
-        {readComments.map((currentTopic) => {
-          return (
-            <>
-              <div key={currentTopic._id}>
-                <p class="sugestoes">{currentTopic.body}</p>
-              </div>
-            </>
-          );
-        })}
+        <img />
+        <div></div>
       </div>
     </div>
   );
