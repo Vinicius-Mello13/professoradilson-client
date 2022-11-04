@@ -60,7 +60,7 @@ export function Login() {
       <div class="page-login-02">
         <form onSubmit={handleSubmit}>
           <div class="e-0">
-            <label class="enter-text">Entrar</label>
+            <h1 class="enter-text">Entrar</h1>
           </div>
           <div>
             <hr></hr>
