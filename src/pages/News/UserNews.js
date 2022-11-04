@@ -75,13 +75,13 @@ export function UserNews() {
   return (
     <div class="page">
       <div>
-        <h1 class="usernews-welcome-text">Acompanhe aqui nosso trabalho!</h1>
+        <h1 class="usernews-welcome-text" style={{ margin: '0' }}>Acompanhe aqui nosso trabalho!</h1>
       </div>
       <div>
         {topics.map((currentTopic) => {
           return (
             <div key={currentTopic._id} class="card">
-              <Link className= "link" to={`/read-news/${currentTopic._id}`}>
+              <Link className="link" to={`/read-news/${currentTopic._id}`}>
                 <h2 class="title-news">{currentTopic.title}</h2>
               </Link>
             </div>
@@ -89,22 +89,30 @@ export function UserNews() {
         })}
       </div>
 
-      <div>
-        <form onSubmit={handleSubmit}>         
+      <div style={{ backgroundColor: 'white', padding: '15px' }}>
+        <div style={{ display:'inline-block', position: 'relative', width:'50%'}}>
+          <img className='imageOpinion' src='https://iili.io/mBNXNj.png' alt='Deixe sua opinião'></img>
+        </div>
+        <div style={{ display:'inline-block', position: 'relative', width:'50%', justifyContent: 'center'}}>
+        <form onSubmit={handleSubmit} >
           <div>
-            <input
-              class="sugestão-input"
+            <label style={{ margin: 20}}>Deixe aqui sua sugestão, crítica ou solicitação</label>
+            <textarea
+              className="textarea-user"
               name="body"
               type="text"
               value={form.body}
               onChange={handleChange}
-              placeholder={"Deixe Aqui sua Sugestão, Crítica ou Solicitação"}
-            ></input>         
+              placeholder={"Mensagem..."}
+            ></textarea>
+            <div style={{justifyContent: 'center', display: 'flex'}}>
             <button class="usernews-button" type="submit">
               Enviar
             </button>
-          </div>
+            </div>
+          </div>          
         </form>
+        </div>
       </div>
 
       <div>

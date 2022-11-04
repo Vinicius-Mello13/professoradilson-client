@@ -177,7 +177,7 @@ hr {
   background-color: gainsboro;
 }
 
-*/ .usernews-welcome-text {
+.usernews-welcome-text {
   font-family: 'Raleway', sans-serif;
   color: black;
   display: flex;
@@ -187,12 +187,17 @@ hr {
   height: 50%;
 }
 
+.imageOpinion{
+  width: 100%;
+  height: 100%;
+}
 .card {
   border-radius: 5px;
   box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
   padding: 30px;
   margin: 20px;
-  width: 800px;
+  margin-right: 0;
+  width: 190vh;
   transition: all 0.3s ease-out;
   background-color: white;
   border-left: 15px solid blue
@@ -223,6 +228,13 @@ hr {
   padding: 10px;
 }
 
+.textarea-user{
+  width: 80%;
+  height: 100px;
+  display: flex;
+  margin: 25px 0 25px 25px;
+}
+
 .sugestao {
   font-family: 'Raleway', sans-serif;
   color: black;
@@ -246,7 +258,7 @@ hr {
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
-
+  justify-content: center;
 }
 
 .sugestoes {
