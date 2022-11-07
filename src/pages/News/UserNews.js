@@ -147,7 +147,7 @@ export function UserNews() {
         </div>
       </header> */}
 
-      <header>
+      {/* <header>
         <img />
         <p>NOTÍCIAS</p>
         <div>
@@ -160,27 +160,28 @@ export function UserNews() {
             </li>
           </ul>
         </div>
-      </header>
+      </header> */}
       <body>
-        {/* 1 */}
         <div>
-          {/* 2 */}
-          <div>
-            {/* 4 */}
-            <div>
-              <h1>O vereador mais votado de Barretos!</h1>
+          {/* 1 */}
+          <div className="div1">
+            {/* 2 */}
+            <div className="div2">
+              {/* 4 */}
+              <div className="div4">
+                <h1 className="text1">O vereador mais votado de Barretos!</h1>
+              </div>
+              {/* 5 */}
+              <div className="div5">
+                <h3>Texto menor de apresentação</h3>                
+              </div>
+              {/* 6 */}
+              <div><button>Botão</button></div>
             </div>
-            {/* 5 */}
-            <div>
-              <h3>Texto menor de apresentação</h3>
-              <button>Botão</button>
+            {/* 3 */}
+            <div className="div3">
+              <img className="img1" src="https://iili.io/pYtz3x.png" />
             </div>
-            {/* 6 */}
-            <div></div>
-          </div>
-          {/* 3 */}
-          <div>
-            <img />
           </div>
           {/* ---------------------------------- */}
           {/* 7 */}
@@ -285,7 +286,12 @@ export function UserNews() {
           {/* 29 */}
           <div>
             {/* 30 */}
-            <div><h6>2022 Todos os direitos reservados. Desenvolvido por Equipe de Tecnologia Professor Adilson Ventura</h6></div>
+            <div>
+              <h6>
+                2022 Todos os direitos reservados. Desenvolvido por Equipe de
+                Tecnologia Professor Adilson Ventura
+              </h6>
+            </div>
           </div>
         </div>
       </body>
