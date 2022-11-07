@@ -9,11 +9,13 @@ import { CreateNews } from "./pages/News/CreateNews";
 import { EditNews } from "./pages/News/EditNews";
 import { ReadNews } from "./pages/News/ReadNews";
 import { UserNews } from "./pages/News/UserNews";
+import Navbar from "./components/NavBar";
 
 function App() {
   return (
     <>
       <AuthContextComponent>
+        <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
