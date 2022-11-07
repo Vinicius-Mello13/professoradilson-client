@@ -74,10 +74,10 @@ export function UserNews() {
 
   return (
     <>
-    <div>
-      <div className='background-image' >
-        
-      </div>
+      <div>
+        <div className='background-image' >
+
+        </div>
         {topics.map((currentTopic) => {
           return (
             <div key={currentTopic._id} class="card">
@@ -88,10 +88,6 @@ export function UserNews() {
           );
         })}
       </div>
-
     </>
-   
-    
-
   );
 }
