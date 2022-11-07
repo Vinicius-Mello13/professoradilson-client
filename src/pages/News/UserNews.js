@@ -75,8 +75,19 @@ export function UserNews() {
   return (
     <>
     <div>
-      
-    </div>
+      <div className='background-image' >
+        
+      </div>
+        {topics.map((currentTopic) => {
+          return (
+            <div key={currentTopic._id} class="card">
+              <Link className="link" to={`/read-news/${currentTopic._id}`}>
+                <h2 class="title-news">{currentTopic.title}</h2>
+              </Link>
+            </div>
+          );
+        })}
+      </div>
 
     </>
    

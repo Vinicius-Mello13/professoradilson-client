@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <div style={{
           backgroundColor: 'white',
-          position: 'relative',
+          position: 'fixed',
           width: '100%',
           zIndex: '0',
           height: '90px',
@@ -18,8 +18,8 @@ const Navbar = () => {
                 width: '100px',
                 height: '75px',
                 backgroundColor: 'blue',
-                padding: '10px',
-                borderRadius: '15px'
+                padding: '0 10px',
+                borderRadius: '15px',
               }}></img>
           </div>
           <div className='nav-bar' style={{
@@ -38,6 +38,7 @@ const Navbar = () => {
           </div>
           <div className='nav-bar'>
             <ul style={{display: 'flex', gap: '5px'}}>
+            <li style={{margin:0}}><button className='button-li'><a href='#'><p className="text-li">Home</p></a></button></li>
               <li style={{margin:0}}><button className='button-li'><a href='#'><p className="text-li">Matérias</p></a></button></li>
               <li style={{margin:0}}><button className='button-li'><a href='#'><p className="text-li">Sugestões</p></a></button></li>
             </ul>
