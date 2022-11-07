@@ -39,7 +39,7 @@ hr {
   width: 90%;
   margin-top: 25px;
   margin-bottom: 25px;
-  
+
 }
 
 .input-name {
@@ -126,7 +126,7 @@ hr {
   display: flex;
   align-items: center;
   text-shadow: 1px 1px 2px black
-  /* margin-left: 250px; */
+    /* margin-left: 250px; */
 }
 
 .buttonCadastro {
@@ -172,7 +172,7 @@ hr {
 }
 
 /* User News */
-.nav-bar{
+.nav-bar {
   width: 100%;
   align-items: center;
   display: flex;
@@ -197,7 +197,7 @@ hr {
   text-shadow: 1px 1px 2px black
 }
 
-.imageOpinion{
+.imageOpinion {
   /* background-image: url("https://iili.io/mBNXNj.png"); */
   background-color: #cccccc;
   width: 1200px;
@@ -239,7 +239,7 @@ hr {
   size: 100px;
 }
 
-.sugestão-input{
+.sugestão-input {
   display: block;
   background-color: #fff;
   margin: 10px 10px 10px 10px;
@@ -248,7 +248,7 @@ hr {
   padding: 10px;
 }
 
-.textarea-user{
+.textarea-user {
   background-image: url("https://iili.io/mBNXNj.png");
   background-size: cover;
   background-clip: content-box;
@@ -306,13 +306,31 @@ hr {
 
 /* Read News */
 
+.button-li {
+  border: none;
+  border-radius: 25px;
+  background-color: blue;
+  line-height: 0.5;
+}
+
+.text-li {
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+ul {
+  display: flex;
+  gap: 5px
+}
+
 ul li {
   display: inline-block;
   margin: 0 10px 0 10px;
 }
 
 ul li:hover {
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 .titulo {
