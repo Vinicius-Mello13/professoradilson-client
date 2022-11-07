@@ -304,6 +304,15 @@ hr {
   height: 100vh;
 }
 
+.chamada-foto{
+  width: 100%;
+}
+
+
+.titulo-home{
+  position: relative;
+}
+
 /* Read News */
 
 ul li {
