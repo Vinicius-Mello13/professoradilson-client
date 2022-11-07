@@ -172,6 +172,12 @@ hr {
 }
 
 /* User News */
+.nav-bar{
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
 
 .page {
   margin: 0;
@@ -299,6 +305,15 @@ hr {
 }
 
 /* Read News */
+
+ul li {
+  display: inline-block;
+  margin: 0 10px 0 10px;
+}
+
+ul li:hover {
+  text-decoration:underline;
+}
 
 .titulo {
   width: 50%;
