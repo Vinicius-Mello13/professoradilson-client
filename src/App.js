@@ -14,8 +14,8 @@ import Navbar from "./components/NavBar";
 function App() {
   return (
     <>
+    {/* <Navbar></Navbar> */}
       <AuthContextComponent>
-        <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />

@@ -1,23 +1,17 @@
+import Navbar from "../../components/NavBar";
+
 export function Home() {
-  return(<body>
-    <div>
-      {/* 1 */}
+  return (
+    <>
+      <Navbar></Navbar>
+
       <div className="div1">
-        {/* 2 */}
         <div className="div2">
-          {/* 4 */}
-          <div className="div4">
-            <h1 className="text1">O vereador mais votado de Barretos!</h1>
-          </div>
-          {/* 5 */}
-          <div className="div5">
-            <h3>Texto menor de apresentação</h3>                
-          </div>
-          {/* 6 */}
-          <div><button>Botão</button></div>
+          <h1 className="text1">O vereador mais votado de Barretos!</h1>
+          <h3 className="text2">Texto menor de apresentação</h3>
+          <button className="button">BOTÃO</button>
         </div>
-        {/* 3 */}
-        <div className="div3">
+        <div className="img-principal">
           <img className="img1" src="https://iili.io/pYtz3x.png" />
         </div>
       </div>
@@ -131,6 +125,9 @@ export function Home() {
           </h6>
         </div>
       </div>
-    </div>
-  </body>); 
+      {/* </div>
+    </div> */}
+    </>
+    // </body>
+  );
 }
